@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Maps</title>
+    <meta property="og:title" content="Monytccc"> <meta property="og:type" content="website"> <meta property="og:url" content="https://www.monytccc.eu.org/"> <meta property="og:image" content="https://maps.monytccc.eu.org/maps.png"> <meta property="og:description" content="Monytccc is a shared web hosting service for software development projects that uses a monytccc version control system and an internet hosting service. It is widely used for computer code. It provides access control and several collaboration features such as bug tracking, feature requests, task management, and websites for each project."> <meta property="og:site_name" content="Monytccc"> <meta property="fb:app_id" content="123456789">
+    <meta charset="utf-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.css" />
+    <style>
+      #mapid {
+        height: 100vh; /* Set height to 100% of viewport height */
+        width: 100vw; /* Set width to 100% of viewport width */
+      }
+      body {
+        margin: 0; /* Remove default margin */
+        padding: 0; /* Remove default padding */
+      }
+      .leaflet-control-attribution {
+  display: none;
+}
+
+    </style>
+  </head>
+  <body>
+    <div id="mapid"></div>
+    <script>
+      var mymap = L.map('mapid').setView([51.505, -0.09], 13);
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
+        maxZoom: 19,
+      }).addTo(mymap);
+    </script>
+    <script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool@x.x.x'></script><script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool@latest'></script>
+  </body>
+</html>
